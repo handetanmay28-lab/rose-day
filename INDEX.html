@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Day Special 🌹 | A Digital Love Letter</title>
+    <meta name="description" content="A premium, romantic Rose Day experience. Send your love with an elegant 3D rose.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Petals Background -->
+    <div class="petals-container" id="petals-container"></div>
+    <div class="rose-burst-container" id="rose-burst-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="rose-container" id="rose-container">
+                <canvas id="rose-canvas"></canvas>
+            </div>
+            <div class="hero-text">
+                <span class="tagline fade-in">Rose Day Special</span>
+                <h1 class="headline fade-in delay-1">A Rose for the One<br>Who Makes My World <em>Bloom</em></h1>
+                <p class="subtitle fade-in delay-2">Every petal carries a whisper of love, every color tells a story of
+                    devotion.</p>
+                <button class="cta-button fade-in delay-3" id="send-rose-btn">
+                    <span>Send a Rose</span>
+                    <span class="rose-icon">🌹</span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator fade-in delay-4">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="message-section" id="message">
+        <div class="container">
+            <div class="glass-card reveal">
+                <div class="card-glow"></div>
+                <div class="card-icon-top">💌</div>
+                <span class="card-label">A Heartfelt Message</span>
+                <h2>On This Beautiful <em>Rose Day</em></h2>
+                <div class="message-divider"></div>
+                <p class="message-text">
+                   Hi RADHA , Like a rose that blooms with the first light of dawn,
+                    my love for you grows stronger with each passing moment.
+                    You are the fragrance that fills my days with joy,
+                    the color that paints my world in shades of happiness.
+                    We’ve been together for a long time now, and through every moment,  
+thank you for your endless love, patience, and support—it truly means everything to me.
+                </p>
+                <div class="message-signature">
+                    <span class="heart-icon">♥</span>
+                    <span>With all my love</span>
+                </div>
+            </div>
+
+            <!-- Song Card -->
+            <div class="song-card reveal">
+                <div class="song-card-glow"></div>
+                <div class="song-artwork">
+                    <span class="music-note">♫</span>
+                </div>
+                <div class="song-info">
+                    <span class="song-label">Our Song</span>
+                    <h3 class="song-title">Perfect</h3>
+                    <p class="song-artist">Ed Sheeran</p>
+                </div>
+                <button class="play-button" id="play-song-btn">
+                    <span class="play-icon">▶</span>
+                </button>
+                <<audio id="song-audio" controls src="music.mp3"></audio>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-header reveal">
+                <span class="section-label">Special Cards For You</span>
+                <h2>Choose Your <em>Favorite</em></h2>
+                <p>Each card is a unique expression of love and appreciation</p>
+            </div>
+            <div class="cards-grid reveal">
+                <!-- Card 1 -->
+                <div class="memory-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-image" src="pic1.jpg" alt="Our memory">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-caption">
+                        <p>Will You Be My Valentine?</p>
+                        <span class="caption-date">♥ For Forever?</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="memory-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-image" src="pic2.jpg" alt="Our memory">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-caption">
+                        <p>A cute small rose for you</p>
+                        <span class="caption-date">♥ For Always</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="memory-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-image" src="pic3.jpg" alt="Our memory">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-caption">
+                        <p>Very big rose for you</p>
+                        <span class="caption-date">♥ Always and forever</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="closing-section" id="closing">
+        <div class="container">
+            <div class="closing-content reveal">
+                <div class="closing-rose">🌹</div>
+                <h2>Forever Yours</h2>
+                <p class="closing-message">
+                    May this Rose Day bring you all the love and happiness you deserve.
+                    You are cherished, you are adored, you are loved beyond measure.
+                </p>
+                <div class="hearts-row">
+                    <span>♥</span>
+                    <span>♥</span>
+                    <span>♥</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-roses">
+                <span>🌹</span>
+                <span>🌹</span>
+                <span>🌹</span>
+            </div>
+            <p>Made with <span class="heart">♥</span> on Rose Day 2026</p>
+            <p class="footer-tagline">A digital love letter, crafted with care</p>
+        </div>
+    </footer>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Main Script -->
+     ...
+    <script src="main.js"></script>
+    <audio id="song-audio" controls src="music.mp3"></audio>
+    
+
+
+</body>
+</html>
+
